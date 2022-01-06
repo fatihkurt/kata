@@ -33,6 +33,6 @@ describe("aggregateProduct", () => {
   it("should aggregate product details", () => {
     const output = aggregateProduct(productLayers);
 
-    assert.equal(output, expectedOutput);
+    assert.deepEqual(output, expectedOutput);
   });
 });

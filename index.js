@@ -1,7 +1,7 @@
 const aggregateProduct = (dataObjects = []) => {
-  let output = dataObjects[0]
+  let output = dataObjects[dataObjects.length - 1]
 
-  for (var i=1; i < dataObjects.length; i++) {
+  for (var i=dataObjects.length - 2; i >= 0; i--) {
     output = Object.assign(output, dataObjects[i])
   }
 
